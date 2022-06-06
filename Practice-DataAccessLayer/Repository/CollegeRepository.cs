@@ -18,29 +18,43 @@ namespace Practice_DataAccessLayer.Repository
             _db = db;
         }
 
-        public Task<College> Create(College entity)
+        public async Task<College> Create(College entity)
         {
-            throw new NotImplementedException();
+            var obj = await _db.colleges.AddAsync(entity);
+            _db.SaveChanges();
+            return obj.Entity;
+           
         }
 
         public void Delete(College entity)
         {
-            throw new NotImplementedException();
+           _db.Remove(entity);
+            _db.SaveChanges();
         }
 
         public IEnumerable<College> GetAll()
         {
-            throw new NotImplementedException();
+            try
+            {
+                return _db.colleges.ToList();
+            }
+            catch(Exception e)
+            {
+                throw e;
+            }
         }
 
         public College GetById(int Id)
         {
-            throw new NotImplementedException();
+            return _db.colleges.Where(x => x.CollegeID == Id).FirstOrDefault();
+           // throw new NotImplementedException();
         }
 
         public void Update(College entity)
         {
-            throw new NotImplementedException();
+            _db.colleges.Update(entity);
+            _db.SaveChanges();
+            //throw new NotImplementedException();
         }
     }
 }

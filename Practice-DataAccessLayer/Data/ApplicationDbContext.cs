@@ -18,7 +18,7 @@ namespace Practice_DataAccessLayer.Data
         {
             if (!options.IsConfigured)
             {
-                options.UseSqlServer("A FALLBACK CONNECTION STRING");
+                options.UseSqlServer(@"Data Source=.;Database=Practice;Trusted_Connection=True");
             }
         }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
