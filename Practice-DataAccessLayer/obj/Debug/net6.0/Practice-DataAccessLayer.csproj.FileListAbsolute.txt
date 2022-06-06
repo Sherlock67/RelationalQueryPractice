@@ -1,0 +1,14 @@
+C:\Users\CMED\source\repos\Practice-WEB\Practice-DataAccessLayer\bin\Debug\net6.0\Practice-DataAccessLayer.deps.json
+C:\Users\CMED\source\repos\Practice-WEB\Practice-DataAccessLayer\bin\Debug\net6.0\Practice-DataAccessLayer.runtimeconfig.json
+C:\Users\CMED\source\repos\Practice-WEB\Practice-DataAccessLayer\bin\Debug\net6.0\Practice-DataAccessLayer.dll
+C:\Users\CMED\source\repos\Practice-WEB\Practice-DataAccessLayer\bin\Debug\net6.0\Practice-DataAccessLayer.pdb
+C:\Users\CMED\source\repos\Practice-WEB\Practice-DataAccessLayer\obj\Debug\net6.0\Practice-DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\CMED\source\repos\Practice-WEB\Practice-DataAccessLayer\obj\Debug\net6.0\Practice-DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CMED\source\repos\Practice-WEB\Practice-DataAccessLayer\obj\Debug\net6.0\Practice-DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\CMED\source\repos\Practice-WEB\Practice-DataAccessLayer\obj\Debug\net6.0\Practice-DataAccessLayer.AssemblyInfo.cs
+C:\Users\CMED\source\repos\Practice-WEB\Practice-DataAccessLayer\obj\Debug\net6.0\Practice-DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\CMED\source\repos\Practice-WEB\Practice-DataAccessLayer\obj\Debug\net6.0\Practice-DataAccessLayer.dll
+C:\Users\CMED\source\repos\Practice-WEB\Practice-DataAccessLayer\obj\Debug\net6.0\refint\Practice-DataAccessLayer.dll
+C:\Users\CMED\source\repos\Practice-WEB\Practice-DataAccessLayer\obj\Debug\net6.0\Practice-DataAccessLayer.pdb
+C:\Users\CMED\source\repos\Practice-WEB\Practice-DataAccessLayer\obj\Debug\net6.0\Practice-DataAccessLayer.genruntimeconfig.cache
+C:\Users\CMED\source\repos\Practice-WEB\Practice-DataAccessLayer\obj\Debug\net6.0\ref\Practice-DataAccessLayer.dll

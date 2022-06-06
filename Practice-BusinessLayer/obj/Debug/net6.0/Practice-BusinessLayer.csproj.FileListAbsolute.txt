@@ -1,0 +1,15 @@
+C:\Users\CMED\source\repos\Practice-WEB\Practice-BusinessLayer\bin\Debug\net6.0\Practice-BusinessLayer.deps.json
+C:\Users\CMED\source\repos\Practice-WEB\Practice-BusinessLayer\bin\Debug\net6.0\Practice-BusinessLayer.dll
+C:\Users\CMED\source\repos\Practice-WEB\Practice-BusinessLayer\bin\Debug\net6.0\Practice-BusinessLayer.pdb
+C:\Users\CMED\source\repos\Practice-WEB\Practice-BusinessLayer\bin\Debug\net6.0\Practice-DataAccessLayer.dll
+C:\Users\CMED\source\repos\Practice-WEB\Practice-BusinessLayer\bin\Debug\net6.0\Practice-DataAccessLayer.pdb
+C:\Users\CMED\source\repos\Practice-WEB\Practice-BusinessLayer\obj\Debug\net6.0\Practice-BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\CMED\source\repos\Practice-WEB\Practice-BusinessLayer\obj\Debug\net6.0\Practice-BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CMED\source\repos\Practice-WEB\Practice-BusinessLayer\obj\Debug\net6.0\Practice-BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\CMED\source\repos\Practice-WEB\Practice-BusinessLayer\obj\Debug\net6.0\Practice-BusinessLayer.AssemblyInfo.cs
+C:\Users\CMED\source\repos\Practice-WEB\Practice-BusinessLayer\obj\Debug\net6.0\Practice-BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\CMED\source\repos\Practice-WEB\Practice-BusinessLayer\obj\Debug\net6.0\Practice-BusinessLayer.csproj.CopyComplete
+C:\Users\CMED\source\repos\Practice-WEB\Practice-BusinessLayer\obj\Debug\net6.0\Practice-BusinessLayer.dll
+C:\Users\CMED\source\repos\Practice-WEB\Practice-BusinessLayer\obj\Debug\net6.0\refint\Practice-BusinessLayer.dll
+C:\Users\CMED\source\repos\Practice-WEB\Practice-BusinessLayer\obj\Debug\net6.0\Practice-BusinessLayer.pdb
+C:\Users\CMED\source\repos\Practice-WEB\Practice-BusinessLayer\obj\Debug\net6.0\ref\Practice-BusinessLayer.dll
