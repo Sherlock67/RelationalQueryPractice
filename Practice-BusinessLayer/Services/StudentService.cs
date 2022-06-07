@@ -19,5 +19,6 @@ namespace Practice_BusinessLayer.Services
         {
             return await _student.Create(student);
         }
+
     }
 }

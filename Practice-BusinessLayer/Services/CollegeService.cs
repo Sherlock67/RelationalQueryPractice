@@ -19,5 +19,6 @@ namespace Practice_BusinessLayer.Services
         {
             return await _college.Create(college);
         }
+
     }
 }

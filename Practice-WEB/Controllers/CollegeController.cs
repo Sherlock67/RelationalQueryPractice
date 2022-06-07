@@ -8,8 +8,8 @@ namespace Practice_WEB.Controllers
     public class CollegeController : Controller
     {
 
-        private static string url = "https://localhost:7197/";
-        [HttpGet]
+        public static string url = "https://localhost:7197/";
+        
         public IActionResult AddNewCollege()
         {
             return View();

@@ -29,7 +29,7 @@ namespace Practice_DataAccessLayer.Repository
         public void Delete(College entity)
         {
            _db.Remove(entity);
-            _db.SaveChanges();
+           _db.SaveChanges();
         }
 
         public IEnumerable<College> GetAll()
