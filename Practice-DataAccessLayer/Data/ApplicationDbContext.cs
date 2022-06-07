@@ -18,7 +18,8 @@ namespace Practice_DataAccessLayer.Data
         {
             if (!options.IsConfigured)
             {
-                options.UseSqlServer(@"Data Source=.;Database=Practice;Trusted_Connection=True");
+                options.UseSqlServer(@"Data Source=.;Database=Practice;Trusted_Connection=True",
+                options => options.EnableRetryOnFailure());
             }
         }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)

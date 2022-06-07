@@ -24,7 +24,7 @@ namespace Practice_API.Controllers
                 await _collegeService.CreateCollege(college);
                 return true;
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
                 return false;
             }

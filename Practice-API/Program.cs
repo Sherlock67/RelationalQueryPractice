@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Practice_BusinessLayer.Services;
 using Practice_DataAccessLayer.Data;
 using Practice_DataAccessLayer.Interface;
 using Practice_DataAccessLayer.Repository;
@@ -11,9 +12,10 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddScoped<IStudent, StudentRepository>();
-builder.Services.AddScoped<ICollege, CollegeRepository>();
-
+builder.Services.AddTransient<IStudent, StudentRepository>();
+builder.Services.AddTransient<ICollege, CollegeRepository>();
+builder.Services.AddTransient<CollegeService>();
+builder.Services.AddTransient<StudentService>();
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
         builder.Configuration.GetConnectionString("DefaultConnection")
     ));
