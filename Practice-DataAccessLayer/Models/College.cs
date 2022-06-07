@@ -12,7 +12,6 @@ namespace Practice_DataAccessLayer.Models
 
         public string CollegeName { get; set; }
 
-        public int StudentID { get; set; }
-        public Student Student { get; set; }
+        
     }
 }
