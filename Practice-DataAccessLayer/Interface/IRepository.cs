@@ -18,5 +18,7 @@ namespace Practice_DataAccessLayer.Interface
 
         public void Delete(T entity);
 
+       
+
     }
 }

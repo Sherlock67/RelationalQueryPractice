@@ -17,7 +17,6 @@ namespace Practice_DataAccessLayer.Repository
         {
             _db = db;
         }
-
         public async Task<College> Create(College entity)
         {
             var obj = await _db.colleges.AddAsync(entity);
@@ -25,13 +24,11 @@ namespace Practice_DataAccessLayer.Repository
             return obj.Entity;
            
         }
-
         public void Delete(College entity)
         {
            _db.Remove(entity);
            _db.SaveChanges();
         }
-
         public IEnumerable<College> GetAll()
         {
             try
@@ -43,12 +40,13 @@ namespace Practice_DataAccessLayer.Repository
                 throw e;
             }
         }
-
         public College GetById(int Id)
         {
             return _db.colleges.Where(x => x.CollegeID == Id).FirstOrDefault();
            // throw new NotImplementedException();
         }
+
+      
 
         public void Update(College entity)
         {

@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Practice_DataAccessLayer.Data;
 
@@ -10,9 +11,10 @@ using Practice_DataAccessLayer.Data;
 namespace Practice_DataAccessLayer.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220608042622_key value")]
+    partial class keyvalue
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -55,7 +57,20 @@ namespace Practice_DataAccessLayer.Migrations
 
                     b.HasKey("StudentID");
 
+                    b.HasIndex("CollegeID");
+
                     b.ToTable("students");
+                });
+
+            modelBuilder.Entity("Practice_DataAccessLayer.Models.Student", b =>
+                {
+                    b.HasOne("Practice_DataAccessLayer.Models.College", "College")
+                        .WithMany()
+                        .HasForeignKey("CollegeID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("College");
                 });
 #pragma warning restore 612, 618
         }

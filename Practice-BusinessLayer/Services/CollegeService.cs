@@ -1,4 +1,5 @@
-﻿using Practice_DataAccessLayer.Interface;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using Practice_DataAccessLayer.Interface;
 using Practice_DataAccessLayer.Models;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,5 @@ namespace Practice_BusinessLayer.Services
         {
             return await _college.Create(college);
         }
-
     }
 }

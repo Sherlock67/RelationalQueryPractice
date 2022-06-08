@@ -57,6 +57,20 @@ namespace Practice_DataAccessLayer.Repository
             _db.SaveChanges();
             //  throw new NotImplementedException();
         }
-       
+      
+
+        
+
+        public async Task<IEnumerable<Student>> GetStudentById()
+        {
+            return (IEnumerable<Student>)(from p in _db.colleges
+                                          join o in _db.students on p.CollegeID equals o.CollegeID
+                                          select new
+                                          {
+                                              o.StudentID,
+                                              o.StudentName
+                                          }).ToList();
+            // throw new NotImplementedException();
+        }
     }
 }

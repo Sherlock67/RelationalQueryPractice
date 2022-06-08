@@ -25,10 +25,23 @@ namespace Practice_API.Controllers
                 return true;
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 return false;
             }
         }
+        //public async IEnumerable<Student> GetAllStudentByCollege()
+        //{
+        //    try
+        //    {
+        //        // some service call will be here.
+        //        //await _studentService 
+        //        return true;
+        //    }
+        //    catch(Exception ex)
+        //    {
+        //        throw new Exception(ex.Message);
+        //    }
+        //}
     }
 }
