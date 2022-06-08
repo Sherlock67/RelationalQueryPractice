@@ -30,18 +30,21 @@ namespace Practice_API.Controllers
                 return false;
             }
         }
-        //public async IEnumerable<Student> GetAllStudentByCollege()
-        //{
-        //    try
-        //    {
-        //        // some service call will be here.
-        //        //await _studentService 
-        //        return true;
-        //    }
-        //    catch(Exception ex)
-        //    {
-        //        throw new Exception(ex.Message);
-        //    }
-        //}
+        [HttpGet("GetAllStudentsByCollege")]
+        public Task<Student> GetStudents(int Id)
+        {
+            try
+            {
+                return _studentService.GetAllStudentsByCollege(Id);
+                
+                // some service call will be here.
+                //await _studentService 
+                
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

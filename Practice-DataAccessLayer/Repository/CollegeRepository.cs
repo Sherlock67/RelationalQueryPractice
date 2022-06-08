@@ -43,11 +43,8 @@ namespace Practice_DataAccessLayer.Repository
         public College GetById(int Id)
         {
             return _db.colleges.Where(x => x.CollegeID == Id).FirstOrDefault();
-           // throw new NotImplementedException();
+
         }
-
-      
-
         public void Update(College entity)
         {
             _db.colleges.Update(entity);

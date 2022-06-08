@@ -38,9 +38,9 @@ namespace Practice_DataAccessLayer.Repository
             {
                return _db.students.ToList();
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                throw e;
+                throw ex;
             }
         }
 
@@ -55,22 +55,31 @@ namespace Practice_DataAccessLayer.Repository
         {
             _db.students.Update(entity);
             _db.SaveChanges();
-            //  throw new NotImplementedException();
+           
         }
-      
 
-        
 
-        public async Task<IEnumerable<Student>> GetStudentById()
+
+
+        //public Student GetStudentById(int Id)
+        //{
+            
+        //}
+
+        public Task<Student> GetStudentById(int Id)
         {
-            return (IEnumerable<Student>)(from p in _db.colleges
-                                          join o in _db.students on p.CollegeID equals o.CollegeID
-                                          select new
-                                          {
-                                              o.StudentID,
-                                              o.StudentName
-                                          }).ToList();
-            // throw new NotImplementedException();
+            College college = new College();
+            return  (from p in _db.colleges
+                    join o in _db.students on p.CollegeID equals o.CollegeID
+                    where college.CollegeID == Id
+                    select new
+                    {
+                        o.StudentID,
+                        o.StudentName
+                    });
+           
+           
+            //   throw new NotImplementedException();
         }
     }
 }

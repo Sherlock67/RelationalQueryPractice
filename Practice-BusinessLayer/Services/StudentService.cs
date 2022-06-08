@@ -19,9 +19,10 @@ namespace Practice_BusinessLayer.Services
         {
             return await _student.Create(student);
         }
-        public async Task<Student> GetAllStudentsByCollege()
+
+        public Task<Student> GetAllStudentsByCollege(int Id)
         {
-            return await _student.GetStudentById();
+            return _student.GetStudentById(Id);
 
         }
     }
