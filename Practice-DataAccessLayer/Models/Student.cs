@@ -14,9 +14,10 @@ namespace Practice_DataAccessLayer.Models
         public int StudentID { get; set; }
         public string StudentName { get; set; }
         //public int StudentAge { get; set; }
-       // [ForeignKey("CollegeID")]
-        public int CollegeID { get; set; }
-        public College College { get; set; }
-       // public College Colleges { get; set; }
+        [ForeignKey("College")]
+        public int CollegeID {get; set;}
+        //public College College {get; set;}
+        public  College Colleges { get; set; }
+        // public College Colleges { get; set; }
     }
 }

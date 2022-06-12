@@ -31,7 +31,7 @@ namespace Practice_API.Controllers
             }
         }
         [HttpGet("GetAllStudentsByCollege")]
-        public Task<Student> GetStudents(int Id)
+        public Student GetStudents(int Id)
         {
             try
             {
@@ -39,7 +39,7 @@ namespace Practice_API.Controllers
                 
                 // some service call will be here.
                 //await _studentService 
-                
+
             }
             catch (Exception ex)
             {

@@ -9,6 +9,6 @@ namespace Practice_DataAccessLayer.Interface
 {
     public interface IStudent : IRepository<Student>
     {
-         Task<Student> GetStudentById(int Id);
+     Student GetStudentById(int Id);
     }
 }

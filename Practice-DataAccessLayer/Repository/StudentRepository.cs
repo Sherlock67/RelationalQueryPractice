@@ -50,36 +50,28 @@ namespace Practice_DataAccessLayer.Repository
             return _db.students.Where(u => u.StudentID == Id).FirstOrDefault();
             //throw new NotImplementedException();
         }
-
         public void Update(Student entity)
         {
             _db.students.Update(entity);
             _db.SaveChanges();
            
         }
-
-
-
-
-        //public Student GetStudentById(int Id)
-        //{
-            
-        //}
-
-        public Task<Student> GetStudentById(int Id)
+        public Student GetStudentById(int Id)
         {
             College college = new College();
-            return  (from p in _db.colleges
-                    join o in _db.students on p.CollegeID equals o.CollegeID
-                    where college.CollegeID == Id
-                    select new
-                    {
-                        o.StudentID,
-                        o.StudentName
-                    });
-           
-           
+            var query = (from p in _db.colleges
+                         join o in _db.students on p.CollegeID equals o.CollegeID
+                         where college.CollegeID == Id
+                         select new Student
+                         {
+                             StudentID = o.StudentID,
+                             StudentName = o.StudentName,
+                         }).SingleOrDefault();
+
+            return query;
             //   throw new NotImplementedException();
         }
+
+        
     }
 }

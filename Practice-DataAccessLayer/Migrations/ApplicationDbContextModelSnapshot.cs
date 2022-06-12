@@ -55,7 +55,20 @@ namespace Practice_DataAccessLayer.Migrations
 
                     b.HasKey("StudentID");
 
+                    b.HasIndex("CollegeID");
+
                     b.ToTable("students");
+                });
+
+            modelBuilder.Entity("Practice_DataAccessLayer.Models.Student", b =>
+                {
+                    b.HasOne("Practice_DataAccessLayer.Models.College", "Colleges")
+                        .WithMany()
+                        .HasForeignKey("CollegeID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Colleges");
                 });
 #pragma warning restore 612, 618
         }

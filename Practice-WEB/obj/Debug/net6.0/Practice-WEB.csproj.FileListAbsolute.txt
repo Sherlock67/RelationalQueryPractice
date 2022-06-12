@@ -263,3 +263,7 @@ C:\Users\CMED\source\repos\Practice-WEB\Practice-WEB\obj\Debug\net6.0\refint\Pra
 C:\Users\CMED\source\repos\Practice-WEB\Practice-WEB\obj\Debug\net6.0\Practice-WEB.pdb
 C:\Users\CMED\source\repos\Practice-WEB\Practice-WEB\obj\Debug\net6.0\Practice-WEB.genruntimeconfig.cache
 C:\Users\CMED\source\repos\Practice-WEB\Practice-WEB\obj\Debug\net6.0\ref\Practice-WEB.dll
+C:\Users\CMED\source\repos\Practice-WEB\Practice-WEB\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\CMED\source\repos\Practice-WEB\Practice-WEB\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\CMED\source\repos\Practice-WEB\Practice-WEB\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\CMED\source\repos\Practice-WEB\Practice-WEB\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
